@@ -1,0 +1,4 @@
+fondo azul oscuro:#1A2A40
+verde principal: #8EBF91
+fonts p:#828FA9
+background inputs: #19273E

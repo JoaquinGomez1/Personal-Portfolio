@@ -1,0 +1,631 @@
+/*------- General -------*/
+:root {
+  --bgMain: #1a2a40;
+  --colorMain: #8ebf91;
+  --bgDarker: #17273d;
+  --bgLight: #1f3049;
+  --fontColor: #828fa9;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 10px;
+  background-color: var(--bgMain);
+  color: var(--fontColor);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+section,
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.container {
+  width: 90%;
+}
+
+a {
+  color: #3c7ad1;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-primary {
+  color: var(--colorMain);
+}
+
+.text-large {
+  font-size: 2rem;
+}
+
+.text-medium {
+  font-size: 1.5rem;
+}
+
+/* -------- Navbar --------- */
+nav {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.3);
+  z-index: 20;
+  position: relative;
+}
+
+nav > .container {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+}
+
+/*hamburger Menu*/
+.nav-options-hamburger {
+  display: flex;
+  align-items: center;
+}
+
+.nav-options-hamburger > label {
+  border: 3px solid var(--fontColor);
+  padding: 10px 15px;
+}
+
+.nav-options-hamburger > label i:hover {
+  color: white;
+}
+
+/*Hamb Menu functionality*/
+input[type="checkbox"],
+.navbarMenuContainer ul {
+  display: none;
+}
+
+.nav-options-hamburger > label > i {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+/*Logo Style*/
+.logo > h1 {
+  color: white;
+  display: flex;
+  position: relative;
+}
+
+.square-dot {
+  background-color: var(--colorMain);
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  bottom: 6px;
+  right: -12px;
+}
+
+/*----------- Sidebar -----------*/
+.sidebar {
+  /*No lo muestro para la vista en dispositivos móviles*/
+  display: none;
+  position: relative;
+  z-index: 20;
+}
+
+/*----------- Landing -----------*/
+.landing {
+  z-index: 0;
+  padding: 30px 0 150px 0;
+  overflow: hidden;
+}
+
+.landing-introduction {
+  font-size: 2em;
+}
+
+.landing-introduction > * {
+  margin: 10px 0;
+}
+
+.landing-introduction > h3 {
+  color: var(--colorMain);
+}
+
+.landing-introduction > h1 {
+  color: white;
+}
+
+/*Button Styles and effects*/
+.viewProyectsBtn {
+  margin: 50px 0;
+}
+
+.callToAction {
+  border: 2px solid var(--colorMain);
+  padding: 14px 26px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+}
+
+.callToAction::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: 200ms transform ease-in-out;
+  transform-origin: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--colorMain);
+  z-index: -1;
+}
+
+.callToAction:hover::before {
+  transform: scale(1) !important;
+}
+
+.landing-illustration {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  z-index: -1;
+}
+.landing-illustration > img {
+  max-width: 100%;
+}
+
+.rotate-circle {
+  width: 400px;
+  height: 280px;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  opacity: 0.09;
+  animation: 100s rotate linear infinite;
+}
+
+.rotate-circle g {
+  max-width: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------About-----------*/
+.about {
+  background-color: var(--bgDarker);
+  padding: 50px 0;
+}
+
+.information-top {
+  font-size: 1.2rem;
+}
+.information-top > h4 {
+  color: var(--colorMain);
+}
+
+.information-top > h2 {
+  color: white;
+}
+
+.about-illustration > img {
+  display: none;
+}
+
+.information-top > h3 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.myTecnologies {
+  display: grid;
+  align-items: center;
+}
+.tec {
+  display: flex;
+  align-items: center;
+}
+
+.tec-icon {
+  font-size: 1.1rem;
+  width: 60px;
+  object-fit: contain;
+}
+
+.tec i {
+  color: var(--colorMain);
+  font-size: 2rem;
+  margin: 10px 20px 0 10px;
+}
+
+/*---------- Servicios ----------*/
+.services {
+  padding: 50px 0;
+}
+
+.services > .container > h2 {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.card {
+  min-height: 250px;
+  text-align: center;
+  background-color: var(--bgDarker);
+  display: grid;
+  align-items: center;
+  margin: 30px 0;
+  padding: 30px 20px;
+  transition: 300ms transform ease-in-out;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  cursor: default;
+}
+
+.card > p {
+  opacity: 0.6 !important;
+}
+
+.mobile {
+  font-family: "IBM Plex Sans ";
+}
+
+.card i {
+  font-size: 2rem;
+  color: var(--fontColor);
+}
+
+.svc-description {
+  transition: 200ms ease-in-out transform;
+  display: none;
+}
+
+.card:hover {
+  color: white;
+  height: unset;
+  z-index: 3;
+}
+
+.card:hover i {
+  color: var(--colorMain);
+}
+
+.card:hover > .svc-description {
+  display: block;
+  animation: slideDown 300ms linear;
+  transform-origin: top;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* ------------ Portfolio ------------*/
+.myWork {
+  background-color: var(--bgDarker);
+}
+.work-title h4 {
+  color: var(--colorMain);
+}
+
+.work-title h1 {
+  color: white;
+}
+
+.proyecto {
+  background-color: #1a2a40;
+  padding: 1.2rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: top;
+  margin: 40px 0;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.proyecto-descripcion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.proyecto-titulo {
+  color: rgba(255, 255, 255, 0.795);
+}
+
+.proyecto-link {
+  max-width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.proyecto-link a {
+  text-decoration: none;
+}
+
+.proyecto-imagen {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.proyecto-imagen img {
+  max-width: 100%;
+  transform-origin: center;
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.proyecto-imagen:hover img {
+  transform: scale(1.2);
+}
+
+.proyecto-link .callToAction {
+  padding: 8px 13px;
+}
+
+/*------------ Contact ------------*/
+.contact {
+  background-color: var(--bgMain);
+}
+
+.contact-info {
+  padding-bottom: 50px;
+}
+
+.contact-title > h4,
+.contact-info div > i {
+  color: var(--colorMain);
+}
+
+.contact-title > h2 {
+  color: white;
+}
+
+.contact-info div > i {
+  margin: 10px 15px 10px 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > label {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.form > input,
+.form > textarea {
+  padding: 15px 10px;
+  background-color: var(--bgLight);
+  border: none;
+  color: var(--fontColor);
+}
+.form > textarea {
+  resize: vertical;
+}
+
+.hide {
+  display: none !important;
+}
+
+.form > h3 {
+  /*Solo se va a mostrar en caso de error*/
+  color: rgb(218, 60, 81);
+  display: block;
+}
+
+.form > button {
+  width: 150px;
+  margin: 20px 0;
+  background-color: transparent;
+  border: 3px solid var(--colorMain);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* ------------------------- Desktop view --------------------------*/
+@media (min-width: 1200px) {
+  /*------- General ---------*/
+  .container {
+    width: 70%;
+  }
+
+  /*------- Navbar ---------*/
+
+  .nav-options-hamburger > label {
+    display: none;
+  }
+  .navbarMenuContainer > ul {
+    display: flex;
+    list-style: none;
+  }
+  .navbarMenuContainer > ul > li {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  .navbarMenuContainer > ul > li:hover {
+    color: var(--colorMain);
+    cursor: pointer;
+  }
+
+  /*------- Sidebar ---------*/
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    width: unset;
+  }
+
+  .sidebarItem {
+    margin: 10px 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    background-color: var(--colorMain);
+  }
+
+  .sidebarItem p {
+    display: none;
+  }
+
+  .sidebarItem:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+  }
+
+  .sidebarItem::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transform-origin: center;
+    transition: 100ms transform ease-in;
+    z-index: 2;
+  }
+
+  .sidebarItem:active::before {
+    transform: scale(1);
+    background-color: #aee0b3;
+  }
+
+  .sidebarItem:hover p {
+    color: white;
+    font-weight: 600;
+    width: 80px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: -18px;
+  }
+
+  /*-------- Landing ---------*/
+  .landing {
+    padding: 150px 0;
+  }
+
+  .landing > .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .landing > .container div {
+    width: 50%;
+  }
+
+  .rotate-circle {
+    width: 200%;
+    height: 200%;
+    top: -200px;
+  }
+  /*-------- About ---------*/
+  .about .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .about .container > div {
+    width: 50%;
+  }
+
+  .about-information {
+    display: flex;
+    width: 100%;
+  }
+
+  .about-illustration img,
+  .about-illustration {
+    display: block !important;
+  }
+
+  .about-illustration img {
+    max-width: 100%;
+  }
+
+  /*--------- Services ---------*/
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+
+  /*Porfolio*/
+
+  .proyecto {
+    padding: 2rem;
+  }
+
+  .proyecto:nth-child(even) {
+    text-align: left;
+  }
+  .proyecto:nth-child(even) ul {
+    list-style-position: inside;
+  }
+  .proyecto:nth-child(even) .proyecto-imagen {
+    order: 2;
+  }
+
+  .proyecto-historia,
+  .proyecto-titulo {
+    margin: 0 2rem;
+  }
+
+  .proyecto-link {
+    padding: 0 2rem;
+    margin: 2rem;
+  }
+  .proyecto-link > * {
+    margin: 0 0.8rem;
+  }
+
+  /*Contact*/
+  .contact-container {
+    display: flex;
+  }
+  .contact-container > div {
+    width: 50%;
+  }
+
+  .contact-info {
+    text-align: right;
+  }
+}

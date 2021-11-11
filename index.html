@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joaquin Gómez - Software Developer</title>
+    <!--Font Awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <!--Custom Css-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <h1>
+            JoaquinG
+            <div class="square-dot"></div>
+          </h1>
+        </div>
+        <div class="nav-options-hamburger">
+          <div class="navbarMenuContainer">
+            <ul class="navbarUl">
+              <li class="inicionav"><p>Inicio</p></li>
+              <li class="aboutnav"><p>Sobre mi</p></li>
+              <li class="proyectnav"><p>Proyectos</p></li>
+              <li class="servicesnav"><p>Servicios</p></li>
+              <li class="contactnav"><p>Contacto</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="sidebar">
+      <div class="sidebarItem inicionav"><p>Inicio</p></div>
+      <div class="sidebarItem aboutnav"><p>Sobre mi</p></div>
+      <div class="sidebarItem proyectnav"><p>Proyectos</p></div>
+      <div class="sidebarItem servicesnav"><p>Servicios</p></div>
+      <div class="sidebarItem contactnav"><p>Contacto</p></div>
+    </section>
+
+    <section class="landing">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        class="container"
+      >
+        <div class="landing-introduction">
+          <h3>Hola!</h3>
+          <h1>Soy Joaquín Gómez</h1>
+          <h4>Desarrollador Full Stack</h4>
+          <button class="callToAction viewProyectsBtn">Ver Proyectos</button>
+        </div>
+        <div class="landing-illustration">
+          <img src="./Images/Landing-ilus (3)-edit.png" alt="" />
+          <svg
+            class="rotate-circle"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 841.9 595.3"
+          >
+            <g fill="#61DAFB">
+              <path
+                d="M666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9V78c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6V78.5c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zM421.2 430c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24 4.7 8 9.5 15.8 14.4 23.4zM420.7 163c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6 0-15.7 22.9-35.6 58.3-50.6 8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zM310 490c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6zM320.8 78.4z"
+              />
+              <circle cx="420.9" cy="296.5" r="45.7" />
+              <path d="M520.5 78.1z" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div data-aos="fade-left" data-aos-duration="1000" class="container">
+        <div class="about-illustration">
+          <img src="./Images/remote-work-man-edit.svg" alt="" />
+        </div>
+        <div>
+          <div class="information-top">
+            <h4 class="text-medium">Introducción</h4>
+            <h2 class="text-large">Sobre Mi</h2>
+            <p>
+              Soy desarollador web con experiencia trabajando tanto en el
+              frontend, como en el backend. Me especializo en crear apliaciones
+              robustas y puedo trabajar tanto en el código del lado del cliente
+              como del servidor. Actualmente cuento con experiencia creando
+              aplicaciones web con Typescript, React, NodeJs, Express, SQL,
+              TailwindCss. También cuento con experiencia en desarrollo móvil
+              utilizando frameworks híbridos, como lo son Flutter y React Native
+            </p>
+            <p>
+              Desde muy chico me encantaba la idea de ser capaz de crear
+              aplicaciones que puedan ayudar, entretener y ser súmamente útiles
+              para el resto del mundo. Hoy puedo decir con mucho orgullo que,
+              gracias a mi esfuerzo y el aporte de la comunidad de
+              desarrolladores, puedo estar cumpliendo mi sueño
+            </p>
+            <p>
+              Si estás buscando un desarrollador, apasionado, energético, con
+              pensamiento crítico, autodidácta, en constante capacitación y con
+              muchas ganas de trabajar en lo que le apasiona, no dudes en
+              ponerte en contacto conmigo utilizando mis
+              <a href="#contact">links de contacto</a>
+            </p>
+
+            <h3>Tecnologías:</h3>
+            <div class="myTecnologies">
+              <div class="tec javascript">
+                <i class="fab fa-js fa-fw"></i>Javascript / Typescript
+              </div>
+              <div class="tec react">
+                <i class="fab fa-react fa-fw"></i>Reactjs
+              </div>
+              <div class="tec nodejs">
+                <i class="fab fa-node fa-fw"></i>Nodejs & Rest API's
+              </div>
+
+              <div class="tec mongodb">
+                <i class="fas fa-database fa-fw"></i> MongoDB / PostgreSQL
+              </div>
+              <div class="tec console">
+                <i class="fab fa-npm fa-fw"></i>CMD & NPM
+              </div>
+              <div class="tec git"><i class="fab fa-git-alt fa-fw"></i>Git</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="myWork">
+      <div data-aos="fade-left" data-aos-duration="1000" class="container">
+        <div class="work-title">
+          <h4 class="text-medium">Showcase</h4>
+          <h1 class="text-large">Algunos de mis proyectos</h1>
+        </div>
+        <div class="proyectos-container">
+          <div class="proyecto">
+            <a
+              href="https://nextjs-bugtracker.vercel.app"
+              target="_blank"
+              class="proyecto-imagen"
+            >
+              <img
+                src="./Images/NextjsBugTracker.png"
+                alt="Ip Locator demo image"
+              />
+            </a>
+
+            <div class="proyecto-descripcion">
+              <h3 class="proyecto-titulo">Next BugTracker</h3>
+              <div class="proyecto-historia">
+                <p>
+                  Aplicación para el seguimiento y correción de errores dentro
+                  de un proyecto
+                </p>
+                <p>
+                  Esta aplicación permite al usuario crear y compartir proyectos
+                  de distinto tipo. Cuenta con un sistema de autorización que
+                  permite a los usuarios gestionar sus proyectos de manera
+                  segura, garantizando que solamente tendrá acceso a dicho
+                  proyecto aquellos usuarios que sean parte del mismo
+                </p>
+                <p>
+                  Además cuenta con un sistema de informe de errores que permite
+                  seguir de forma mas organizada cuales son los problemas que
+                  van surgiendo a lo largo del desarrollo de cada proyecto. Asi
+                  también como una casilla de comentarios dentro de cada informe
+                  para poder mantener discusiones sobre cual seria el mejor plan
+                  de acción para resolverlo
+                </p>
+                <ul>
+                  <li>Nextjs</li>
+                  <li>React</li>
+                  <li>Next API</li>
+                  <li>Framer motion</li>
+                  <li>Material UI</li>
+                  <li>Context API</li>
+                  <li>PostgreSQL</li>
+                  <li>Deploy en Vercel</li>
+                </ul>
+              </div>
+              <div class="proyecto-link">
+                <a
+                  class="callToAction"
+                  href="https://github.com/JoaquinGomez1/Nextjs-Bugtracker"
+                >
+                  <i class="fab fa-github" target="_blank"></i>
+                  Ver Código fuente
+                </a>
+
+                <a
+                  class="callToAction"
+                  href="https://nextjs-bugtracker.vercel.app/"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe-americas"></i>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://twitter-ui-clone-gules.vercel.app/"
+              target="_blank"
+              class="proyecto-imagen"
+            >
+              <img src="./Images/TwitterUI.png" alt="Ip Locator demo image" />
+            </a>
+
+            <div class="proyecto-descripcion">
+              <h3 class="proyecto-titulo">Twitter UI - Maquetado en React</h3>
+              <div class="proyecto-historia">
+                <p>
+                  Proyecto de maquetado utilizando React y TailwindCss. El
+                  objetivo de este proyecto es demostrar mis habilidades de
+                  maquetado y mi capacidad de trabajar con un diseño
+                  pre-definido. Esta aplicación cuenta únicamente con lógica del
+                  lado del cliente, es decir toda la persistencia que maneja
+                  este proyecto es de manera local
+                </p>
+
+                <ul>
+                  <li>Nextjs</li>
+                  <li>React</li>
+                  <li>TailwindCss</li>
+                </ul>
+              </div>
+              <div class="proyecto-link">
+                <a
+                  class="callToAction"
+                  href="https://github.com/JoaquinGomez1/twitter-ui-clone"
+                >
+                  <i class="fab fa-github" target="_blank"></i>
+                  Ver Código fuente
+                </a>
+
+                <a
+                  class="callToAction"
+                  href="https://twitter-ui-clone-gules.vercel.app/"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe-americas"></i>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://elektronics.herokuapp.com/"
+              target="_blank"
+              class="proyecto-imagen"
+            >
+              <img src="./Images/electroniks.png" alt="E-commerce demo image" />
+            </a>
+
+            <div class="proyecto-descripcion">
+              <h3 class="proyecto-titulo">Electroniks E-commerce</h3>
+              <div class="proyecto-historia text-left">
+                <p>
+                  Aplicacion de comercio electrónico en la cual implemento
+                  funcionalidad de carro de compras, enrutamiento dinámico,
+                  autorización y autenticación de usuarios, productos favoritos
+                  y funcionalidad de CRUD para usuarios administradores.
+                </p>
+                <p>
+                  Lamentablemente esta aplicación fue desarrollada únicamente
+                  con propósitos educativos y no cuenta con ningún tipo de
+                  logística real detrás de su funcionalidad, por lo cual no
+                  implementé un sistema de cobro y procesamiento de pagos (Como
+                  podría haber hecho con la API de Stripe o MercadoPago) para
+                  evitar confusiones en el caso de que alguien intente hacer una
+                  compra utilizando una tarjeta de crédito válida. Tecnologías
+                  utilizadas:
+                </p>
+                <ul>
+                  <li>Reactjs</li>
+                  <li>Nodejs</li>
+                  <li>Express</li>
+                  <li>MongoDB y MongoAtlas</li>
+                  <li>React-Router</li>
+                  <li>Material-ui</li>
+                  <li>
+                    Tanto el Backend como el Frontend están hosteados en Heroku
+                  </li>
+                </ul>
+                Todas las animaciones están hechas con css unicamente
+              </div>
+              <div class="proyecto-link">
+                <a class="callToAction">
+                  <i
+                    class="fab fa-github"
+                    href="https://github.com/JoaquinGomez1?tab=repositories"
+                    target="_blank"
+                  ></i>
+                  Ver Código fuente
+                </a>
+
+                <a
+                  class="callToAction"
+                  href="https://elektronics.herokuapp.com/"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe-americas"></i>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://pokepediav2.netlify.app/"
+              target="_blank"
+              class="proyecto-imagen"
+            >
+              <img src="./Images/pokepedia.png" alt="Pokepedia demo image" />
+            </a>
+            <div class="proyecto-descripcion">
+              <h3 class="proyecto-titulo">PokePedia</h3>
+              <div class="proyecto-historia">
+                <p>
+                  Recreación de mi primera aplicación web, pero esta vez
+                  utilizando React para tener un código mas limpio y
+                  reutilizable. Fue uno de mis primeros proyectos en el cual
+                  consumía una API y me permitió aprender un montón sobre este
+                  framework en muy poco tiempo
+                </p>
+                <p>
+                  La principal funcionalidad de esta aplicación es brindar a
+                  quienes lo necesiten información sobre los juegos publicados
+                  de la misma saga.
+                </p>
+                Tecnologías utilizadas:
+                <ul>
+                  <li>JSX</li>
+                  <li>Reactjs</li>
+                  <li>React Router</li>
+                  <li>Fetch API</li>
+                  <li>Css</li>
+                  <li>Deploy en Netlify</li>
+                </ul>
+              </div>
+              <div class="proyecto-link">
+                <a
+                  class="callToAction"
+                  href="https://github.com/JoaquinGomez1/Pokedex-V2-React"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                  Ver Código fuente
+                </a>
+
+                <a
+                  class="callToAction"
+                  href="https://pokepediav2.netlify.app/"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe-americas"></i>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto">
+            <a
+              href="https://admiring-lumiere-8c7707.netlify.app/"
+              target="_blank"
+              class="proyecto-imagen"
+            >
+              <img src="./Images/proof.jpg" alt="Proof demo image" />
+            </a>
+            <div class="proyecto-descripcion">
+              <h3 class="proyecto-titulo">Proof - Maquetado HTML CSS</h3>
+              <div class="proyecto-historia">
+                <p>
+                  Este es uno de las primeras páginas en las que trabajé, es
+                  solamente un landing page hecho sin ningún framework
+                </p>
+
+                <p>
+                  Es una recreación del landing page de una compañia llamada
+                  proof, cuyo sition original se puede encontrar al hacer click
+                  al logo de la empresa
+                </p>
+                Tecnologías utilizadas:
+                <ul dir?="rtl">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="proyecto-link">
+                <a
+                  class="callToAction"
+                  href="https://github.com/JoaquinGomez1/Proof-copy/"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                  Ver Código fuente
+                </a>
+
+                <a
+                  class="callToAction"
+                  href="https://admiring-lumiere-8c7707.netlify.app/"
+                  target="_blank"
+                >
+                  <i class="fas fa-globe-americas"></i>
+                  Ver demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div data-aos="fade-right" data-aos-duration="1000" class="container">
+        <h2 class="text-large">Mis Servicios</h2>
+        <div class="card-container">
+          <div class="card">
+            <i class="fab fa-react"></i>
+            <h3>Server Side Render</h3>
+            <p class="svc-description">
+              Utilizo Nextjs para desarrollar aplicaciones web altamente
+              eficientes utilizando renderizado del lado del servidor. Lo que
+              quiere permite que las aplicaciones sean mas rápidas, eficientes y
+              mucho mejores para el SEO!
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-desktop"></i>
+            <h3>Responsive web design</h3>
+            <p class="svc-description">
+              Creación de layouts dinámicas que adaptan de manera elegante el
+              diseño de cualquier sitio web
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-flag-usa"></i>
+            <h3>English proficiency</h3>
+            <p class="svc-description">
+              I believe being able to communicate in fluent English is one of
+              the most important skills to have in order to be an awesome
+              Software Developer
+            </p>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-server"></i>
+            <h3>Frontend y Backend</h3>
+            <p class="svc-description">
+              Cuento con experiencia creando aplicaciones que interactúan tanto
+              con el servidor y su base de datos como con el usuario y sus
+              necesidades
+            </p>
+          </div>
+
+          <div class="card">
+            <i class="far fa-lightbulb"></i>
+            <h3>Resolución de problemas</h3>
+            <p class="svc-description">
+              Pensamiento lógico y habilidades de analisis para resolver los
+              diferentes desafíos que se presentan día a día
+            </p>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-users"></i>
+            <h3>Team Player</h3>
+            <p class="svc-description">
+              Excelentes capacidades de comunicación y trabajo en equipo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div data-aos="fade-down" data-aos-duration="1000" class="container">
+        <div class="contact-title">
+          <h4>Información</h4>
+          <h2 class="text-large">Cómo contactarme:</h2>
+        </div>
+        <div class="contact-container">
+          <div class="contact-input">
+            <h3>Dejame un mensaje:</h3>
+            <form
+              method="POST"
+              name="emailFomr"
+              enctype="multipart/form-data"
+              id="form"
+              class="form"
+            >
+              <label for="name">Asunto:</label>
+              <input type="text" id="subject" placeholder="Asunto: " />
+
+              <label for="msg">Tu mensaje:</label>
+              <textarea
+                id="msg"
+                cols="30"
+                rows="10"
+                placeholder="Contratado"
+              ></textarea>
+
+              <h3 class="errorMsg hide"></h3>
+              <button class="callToAction sendFormBtn" type="submit">
+                Enviar
+              </button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="location">
+              <i class="fas fa-map-marker-alt"></i> <b> UBICACIÓN: </b> Córdoba
+              Capital, Argentina
+            </div>
+            <div class="location">
+              <a
+                href="https://github.com/JoaquinGomez1/"
+                target="_blank"
+                class="text-large text-primary contact-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/joaquin-g%C3%B3mez-6143221b2/"
+                target="_blank"
+                class="text-large text-primary contact-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+  </body>
+</html>
