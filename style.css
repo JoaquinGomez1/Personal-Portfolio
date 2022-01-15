@@ -5,8 +5,11 @@
   --bgDarker: #17273d;
   --bgLight: #1f3049;
   --fontColor: #828fa9;
+  --linkColor: #3c7ad1;
 }
-
+html {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +19,7 @@ body {
   background-color: var(--bgMain);
   color: var(--fontColor);
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 section,
 nav {
@@ -31,7 +34,7 @@ nav {
 }
 
 a {
-  color: #3c7ad1;
+  color: var(--linkColor);
 }
 
 .text-left {
@@ -362,10 +365,9 @@ input[type="checkbox"],
 }
 
 .proyecto-link {
-  max-width: 100%;
   margin: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 8px;
 }
 
 .proyecto-link a {
@@ -391,6 +393,7 @@ input[type="checkbox"],
 
 .proyecto-link .callToAction {
   padding: 8px 13px;
+  text-align: center;
 }
 
 /*------------ Contact ------------*/
@@ -612,6 +615,8 @@ input[type="checkbox"],
   .proyecto-link {
     padding: 0 2rem;
     margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
   }
   .proyecto-link > * {
     margin: 0 0.8rem;
